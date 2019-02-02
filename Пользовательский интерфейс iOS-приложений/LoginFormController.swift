@@ -82,7 +82,7 @@ class LoginFormController: UIViewController {
         let login = loginField.text
         let password = passwordField.text
         
-        if login == "admin" && password == "123456" {
+        if login == " " && password == " " {
             return true
             } else {
             return false

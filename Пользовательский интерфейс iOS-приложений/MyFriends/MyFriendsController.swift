@@ -29,6 +29,7 @@ class MyFriendsController: UITableViewController {
         let friend = friends[indexPath.row]
         // устанавливаем данные друга в значение ячейки
         cell.friendName.text = friend
+        cell.friendLabel.image = 
         
         return cell
     }

@@ -28,19 +28,24 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="naE-YI-jhg">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                         <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3CH-3h-T5Z">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.036866625683270197" green="0.52225398071283335" blue="0.83100073973749589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gto-ID-icd">
                                                 <rect key="frame" x="183.66666666666666" y="165" width="47" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RDf-zt-ORT">
-                                                <rect key="frame" x="152.66666666666666" y="66" width="108.99999999999997" height="47"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VK" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RDf-zt-ORT">
+                                                <rect key="frame" x="176.66666666666666" y="66" width="60.666666666666657" height="47"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="47" id="S88-ry-VYr"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mXx-et-qsZ">
@@ -62,8 +67,11 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AUs-TV-tOt">
-                                                <rect key="frame" x="192" y="394" width="30" height="30"/>
-                                                <state key="normal" title="Ok"/>
+                                                <rect key="frame" x="192" y="394" width="30" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <state key="normal" title="Ok">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
                                                 <connections>
                                                     <segue destination="PsS-yn-T6M" kind="show" id="dkR-Ac-gc0"/>
                                                 </connections>
@@ -130,7 +138,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1349" y="814"/>
+            <point key="canvasLocation" x="-1349.2753623188407" y="813.58695652173924"/>
         </scene>
         <!--Друзья-->
         <scene sceneID="wvN-wx-zqs">
@@ -154,16 +162,26 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XMn-hx-C1V">
+                                            <rect key="frame" x="0.0" y="0.0" width="49" height="44"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="44" id="HOL-Z8-7zL"/>
+                                                <constraint firstAttribute="width" constant="49" id="TVe-sW-DyH"/>
+                                            </constraints>
+                                        </imageView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="0nS-xR-ci4" firstAttribute="centerY" secondItem="VmK-bc-9OV" secondAttribute="centerY" id="5rO-oD-Io1"/>
                                         <constraint firstItem="0nS-xR-ci4" firstAttribute="top" secondItem="VmK-bc-9OV" secondAttribute="topMargin" id="7yo-4a-9YE"/>
+                                        <constraint firstItem="XMn-hx-C1V" firstAttribute="leading" secondItem="VmK-bc-9OV" secondAttribute="leading" id="aGY-So-RAi"/>
                                         <constraint firstItem="0nS-xR-ci4" firstAttribute="leading" secondItem="VmK-bc-9OV" secondAttribute="leadingMargin" id="bev-yh-xtj"/>
                                         <constraint firstItem="0nS-xR-ci4" firstAttribute="centerX" secondItem="VmK-bc-9OV" secondAttribute="centerX" id="cNa-sO-guT"/>
+                                        <constraint firstItem="XMn-hx-C1V" firstAttribute="top" secondItem="VmK-bc-9OV" secondAttribute="top" id="ci8-J5-zTS"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="0nS-xR-ci4" secondAttribute="trailing" id="dqL-Rm-sVl"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="friendLabel" destination="XMn-hx-C1V" id="E7S-mQ-fWb"/>
                                     <outlet property="friendName" destination="0nS-xR-ci4" id="ZJK-6y-ZXY"/>
                                     <segue destination="KVH-uN-jFb" kind="show" id="Sjp-Tv-MIV"/>
                                 </connections>
