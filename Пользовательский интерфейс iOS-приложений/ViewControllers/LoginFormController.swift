@@ -1,8 +1,7 @@
-//
 
 import UIKit
 
-class LoginFormController: UIViewController {
+class LoginFormController: UIViewController, UITextFieldDelegate {
     
     //MARK: - Outlets
     
@@ -22,6 +21,37 @@ class LoginFormController: UIViewController {
     private let demoLogin = "123"
     private let demoPassword = "456"
     
+    //MARK: - Actions
+    
+    @IBAction func logInButtonAction() {
+        print("LogInButtonAction")
+        
+        guard let loginText = self.loginField?.text else {
+            print("Empty Login Text")
+            return
+        }
+        guard let passwordText = self.passwordField?.text else {
+            print("Empty Password Text")
+            return
+        }
+        if self.demoLogin == loginText && self.demoPassword == passwordText {
+            print("Success")
+        } else {
+            print("loginText or passwordText are invalid")
+        }
+    }
+    
+    @IBAction func logOutButtonAction(segue: UIStoryboardSegue?) { // кнопка выхода из приложения
+        
+        let destinationVC = segue?.destination // Login
+        let source = segue?.source // MyFriends
+    }
+    
+    @IBAction func closeKeyboardAction() {
+        print("closeKeyboardAction")
+        self.view.endEditing(true)
+    }
+
     //MARK: - Init
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
@@ -53,6 +83,41 @@ class LoginFormController: UIViewController {
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
     }
+    
+    //MARK: - UITextFieldWill    ----- Не работает -----
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        if let loginField = self.loginField, loginField == textField {
+            print("TextFieldShouldReturn Login")
+            
+            self.passwordField?.becomeFirstResponder()
+            
+        } else if let passwordField = self.passwordField, passwordField == textField {
+            print("TextFieldShouldReturn Password")
+    
+            self.passwordField?.resignFirstResponder()
+        } else {
+            print("TextFieldShouldReturn Unkown")
+        }
+        return true
+    }
+    
+    public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        guard let text = textField.text else {
+            return true
+        }
+        guard let textRange = Range(range, in: text) else {
+            return true
+        }
+        let updatedText = text.replacingCharacters(in: textRange, with: string)
+        if let passwordField = self.passwordField, passwordField == textField, updatedText.count > 3 {
+            return false
+        }
+        return true
+    }
+    
+    //MARK: - KeyboardWasShow/WillHide
     
     @objc func keyboardWasShow(notification: Notification) {
         guard let userInfo = notification.userInfo as NSDictionary? else {
@@ -96,37 +161,6 @@ class LoginFormController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    //MARK: - Actions
-    
-    @IBAction func logInButtonAction() {
-        print("LogInButtonAction")
-        
-        guard let loginText = self.loginField?.text else {
-            print("Empty Login Text")
-            return
-        }
-        guard let passwordText = self.passwordField?.text else {
-            print("Empty Password Text")
-            return
-        }
-        if self.demoLogin == loginText && self.demoPassword == passwordText {
-            print("Success")
-        } else {
-            print("loginText or passwordText are invalid")
-        }
-    }
-    
-    @IBAction func logOutButtonAction(segue: UIStoryboardSegue?) { // кнопка выхода из приложения
-        
-        let destinationVC = segue?.destination // Login
-        let source = segue?.source // MyFriends
-    }
-    
-    @IBAction func closeKeyboardAction() {
-        print("closeKeyboardAction")
-        self.view.endEditing(true)
-    }
-
     //MARK: - Alerts
     
     //Создаем функцию вывода алерта в случае ошибки

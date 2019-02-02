@@ -75,6 +75,7 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="logInButtonAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="AKs-9i-xs4"/>
+                                                    <segue destination="PsS-yn-T6M" kind="show" id="Flq-DB-2oR"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -210,7 +211,7 @@
                         <barButtonItem key="backBarButtonItem" title="Назад" id="raJ-2a-Dgj"/>
                         <barButtonItem key="leftBarButtonItem" title="Log out" id="SR5-J1-Vk5">
                             <connections>
-                                <segue destination="eMH-A7-m3i" kind="unwind" unwindAction="logOutActionWithSegue:" id="hTj-hk-5bu"/>
+                                <segue destination="eMH-A7-m3i" kind="unwind" unwindAction="logOutButtonActionWithSegue:" id="xiE-7i-uUM"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="qWs-Bm-gc2">
@@ -429,7 +430,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OzP-tw-Ir9" userLabel="Friend Image View">
-                                            <rect key="frame" x="13" y="-1" width="74" height="44"/>
+                                            <rect key="frame" x="20" y="-1" width="74" height="44"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                     </subviews>
