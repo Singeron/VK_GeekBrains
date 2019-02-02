@@ -72,15 +72,15 @@
 		199484AA219442C8008DF759 /* Пользовательский интерфейс iOS-приложений */ = {
 			isa = PBXGroup;
 			children = (
-				199484BD21944382008DF759 /* LoginFormController.swift */,
-				199484AB219442C8008DF759 /* AppDelegate.swift */,
-				199484AD219442C8008DF759 /* ViewController.swift */,
+				C78FB320220606750020B6C4 /* ViewControllers */,
 				C77A553C21A18A0B00431027 /* Group */,
 				C75A096F21A03F5A00CEDDF2 /* DataFriends */,
 				C75A096A21A029AD00CEDDF2 /* MyFriends */,
 				C78B5B7B21A011A400FC56A2 /* AllFriends */,
 				199484AF219442C8008DF759 /* Main.storyboard */,
 				199484B2219442C9008DF759 /* Assets.xcassets */,
+				199484AB219442C8008DF759 /* AppDelegate.swift */,
+				199484AD219442C8008DF759 /* ViewController.swift */,
 				199484B4219442C9008DF759 /* LaunchScreen.storyboard */,
 				199484B7219442C9008DF759 /* Info.plist */,
 			);
@@ -90,7 +90,6 @@
 		C75A096A21A029AD00CEDDF2 /* MyFriends */ = {
 			isa = PBXGroup;
 			children = (
-				C75A096B21A02A1000CEDDF2 /* MyFriendsController.swift */,
 				C75A096D21A02A3000CEDDF2 /* MyFriendsCell.swift */,
 			);
 			path = MyFriends;
@@ -99,7 +98,6 @@
 		C75A096F21A03F5A00CEDDF2 /* DataFriends */ = {
 			isa = PBXGroup;
 			children = (
-				C75A097021A03FDB00CEDDF2 /* FriendsViewController.swift */,
 				C75A097221A0401500CEDDF2 /* FriendsCell.swift */,
 			);
 			path = DataFriends;
@@ -108,7 +106,6 @@
 		C77A553C21A18A0B00431027 /* Group */ = {
 			isa = PBXGroup;
 			children = (
-				C77A553D21A18A8300431027 /* FilterViewController.swift */,
 				C77A553F21A18AA400431027 /* FilterCell.swift */,
 			);
 			path = Group;
@@ -117,10 +114,21 @@
 		C78B5B7B21A011A400FC56A2 /* AllFriends */ = {
 			isa = PBXGroup;
 			children = (
-				C78B5B7C21A011E900FC56A2 /* AllFriendsController.swift */,
 				C78B5B7E21A0121B00FC56A2 /* AllFriendsCell.swift */,
 			);
 			path = AllFriends;
+			sourceTree = "<group>";
+		};
+		C78FB320220606750020B6C4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				199484BD21944382008DF759 /* LoginFormController.swift */,
+				C75A096B21A02A1000CEDDF2 /* MyFriendsController.swift */,
+				C78B5B7C21A011E900FC56A2 /* AllFriendsController.swift */,
+				C75A097021A03FDB00CEDDF2 /* FriendsViewController.swift */,
+				C77A553D21A18A8300431027 /* FilterViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
