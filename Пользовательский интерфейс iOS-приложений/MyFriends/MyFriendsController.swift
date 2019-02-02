@@ -28,8 +28,7 @@ class MyFriendsController: UITableViewController {
         // получаем данные друга для конкретной строки
         let friend = friends[indexPath.row]
         // устанавливаем данные друга в значение ячейки
-        cell.friendName.text = friend
-        cell.friendLabel.image = 
+        cell.friend.text = friend
         
         return cell
     }

@@ -4,8 +4,7 @@ import UIKit
 
 class MyFriendsCell: UITableViewCell {
     
-    @IBOutlet weak var friendName: UILabel!
-    @IBOutlet weak var friendLabel: UIImageView!
+    @IBOutlet weak var friend: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

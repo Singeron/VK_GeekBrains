@@ -4,6 +4,11 @@ import UIKit
 
 class AllFriendsController: UITableViewController {
 
+    static var counter: Int = 0
+    
+    func counterValue() -> Int {
+        return AllFriendsController.counter
+    }
     // создаем массив друзей
     var friends = [
         "Иван",
@@ -17,7 +22,9 @@ class AllFriendsController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        AllFriendsController.counter += 1
+        
     }
 // определяем количество столбцов
     override func numberOfSections(in tableView: UITableView) -> Int {

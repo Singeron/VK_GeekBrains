@@ -8,6 +8,12 @@ class LoginFormController: UIViewController {
     @IBOutlet weak var loginField: UITextField!    // получаем данные из поля "Логин"
     @IBOutlet weak var passwordField: UITextField! // получаем данные из поля "Пароль"
     
+    @IBAction func logOutAction(segue: UIStoryboardSegue?) { // кнопка выхода из приложения
+        
+        let destinationVC = segue?.destination // Login
+        let source = segue?.source // MyFriends
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         // на скролл вью добавили рекогнайзер, который будет отрабатывать на Тап
