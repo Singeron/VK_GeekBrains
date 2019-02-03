@@ -1,49 +1,33 @@
 
 import UIKit
 
-class AllFriendsController: UITableViewController {
+class SettingsController: UITableViewController {
 
-    static var counter: Int = 0
-    
-    func counterValue() -> Int {
-        return AllFriendsController.counter
-    }
-    // создаем массив друзей
-    var friends = [
-        "Иван",
-        "Дмитрий",
-        "Владимир",
-        "Илья",
-        "Денис",
-    ]
-    
-    // добавить картинки друзей из ассетов!!!
+    @IBOutlet private weak var SettingsScrollView: UIScrollView!   // вывели прокрутку экрана настроек
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        AllFriendsController.counter += 1
-        
-    }
-// определяем количество столбцов
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-// определяем количество строк
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return friends.count
     }
 
+    // MARK: - Table view data source
+
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 0
+    }
+
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0
+    }
+
+    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        // получаем пул ячеек
-        let cell = tableView.dequeueReusableCell(withIdentifier: "FriendCell", for: indexPath) as! AllFriendsCell
-        // получаем данные по другу для конкретной строки
-        let friend = friends[indexPath.row]
-        // устанавливаем данные по другу в значение ячейки
-        cell.friendName.text = friend
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+
+        // Configure the cell...
+
         return cell
     }
+    */
 
     /*
     // Override to support conditional editing of the table view.

@@ -1,5 +1,4 @@
 
-
 import UIKit
 
 class FilterViewController: UITableViewController, UISearchBarDelegate {
@@ -14,48 +13,34 @@ class FilterViewController: UITableViewController, UISearchBarDelegate {
         "Друзья",
         ]
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        // на скролл вью добавили рекогнайзер, который будет отрабатывать на Тап
-//        let hideRecoghizer = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
-//        // тут мы вешаем рекогнайзер на Тап вью
-//        scrollView.addGestureRecognizer(hideRecoghizer)
-//        // подписываемся на уведомления когда клавиатура должна появиться
-//        NotificationCenter.default.addObserver(
-//            self,
-//            selector: #selector(keyBoardWasShow),
-//            name: UIResponder.keyboardWillShowNotification,
-//            object: nil
-//        )
-//        // подписываемся на уведомления когда клавиатура должна появиться
-//        NotificationCenter.default.addObserver(
-//            self,
-//            selector: #selector(keyBoardWasShow),
-//            name: UIResponder.keyboardWillHideNotification,
-//            object: nil
-//        )
+    //MARK: - Action
+    
+    @IBAction func closeKeyboardAction() {   // убираем клавиатуру по тапу
+        print("closeKeyboardAction")
+        self.view.endEditing(true)
     }
     
-    // тут отписываемся от уведомлений (начиная с 12.0 Не ненужно это делать)
+    //MARK: - Lyfecycle
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
+    
+// тут отписываемся от уведомлений (начиная с 12.0 Не ненужно это делать)
     func viewWillDissapear(_ animated: Bool){
         super.viewWillDisappear(animated)
         NotificationCenter.default.removeObserver(self)
     }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-//    поиск через делегат
 //    let bar = UISearchBar()
 //    bar.delegate = self.func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String)
-    
-    
+//    
 //    // забираем размеры клавиатуры
 //    @objc func keyBoardWasShow (notification: Notification) {
 //        guard
@@ -100,59 +85,38 @@ class FilterViewController: UITableViewController, UISearchBarDelegate {
         
         return cell
     }
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
-        // Configure the cell...
+//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+//
+//        return cell
+//    }
+//
+//
+//    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+//        return true
+//    }
+//
+//    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+//        if editingStyle == .delete {
+//            tableView.deleteRows(at: [indexPath], with: .fade)
+//        } else if editingStyle == .insert {
+//
+//        }
+//    }
+//
+//    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
+//    }
+//
+//    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
+//        return true
+//    }
 
-        return cell
-    }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    //override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-    }
-    */
-
+    //}
 }

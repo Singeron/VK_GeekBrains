@@ -21,6 +21,7 @@
 		C77A554021A18AA400431027 /* FilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77A553F21A18AA400431027 /* FilterCell.swift */; };
 		C78B5B7D21A011E900FC56A2 /* AllFriendsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78B5B7C21A011E900FC56A2 /* AllFriendsController.swift */; };
 		C78B5B7F21A0121B00FC56A2 /* AllFriendsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78B5B7E21A0121B00FC56A2 /* AllFriendsCell.swift */; };
+		C78FB322220701240020B6C4 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78FB321220701240020B6C4 /* SettingsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		C77A553F21A18AA400431027 /* FilterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCell.swift; sourceTree = "<group>"; };
 		C78B5B7C21A011E900FC56A2 /* AllFriendsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFriendsController.swift; sourceTree = "<group>"; };
 		C78B5B7E21A0121B00FC56A2 /* AllFriendsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFriendsCell.swift; sourceTree = "<group>"; };
+		C78FB321220701240020B6C4 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,10 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				C78FB320220606750020B6C4 /* ViewControllers */,
-				C77A553C21A18A0B00431027 /* Group */,
-				C75A096F21A03F5A00CEDDF2 /* DataFriends */,
-				C75A096A21A029AD00CEDDF2 /* MyFriends */,
-				C78B5B7B21A011A400FC56A2 /* AllFriends */,
+				C77A553C21A18A0B00431027 /* Cells */,
 				199484AF219442C8008DF759 /* Main.storyboard */,
 				199484B2219442C9008DF759 /* Assets.xcassets */,
 				199484AB219442C8008DF759 /* AppDelegate.swift */,
@@ -87,46 +86,26 @@
 			path = "Пользовательский интерфейс iOS-приложений";
 			sourceTree = "<group>";
 		};
-		C75A096A21A029AD00CEDDF2 /* MyFriends */ = {
+		C77A553C21A18A0B00431027 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
 				C75A096D21A02A3000CEDDF2 /* MyFriendsCell.swift */,
-			);
-			path = MyFriends;
-			sourceTree = "<group>";
-		};
-		C75A096F21A03F5A00CEDDF2 /* DataFriends */ = {
-			isa = PBXGroup;
-			children = (
+				C78B5B7E21A0121B00FC56A2 /* AllFriendsCell.swift */,
 				C75A097221A0401500CEDDF2 /* FriendsCell.swift */,
-			);
-			path = DataFriends;
-			sourceTree = "<group>";
-		};
-		C77A553C21A18A0B00431027 /* Group */ = {
-			isa = PBXGroup;
-			children = (
 				C77A553F21A18AA400431027 /* FilterCell.swift */,
 			);
-			path = Group;
-			sourceTree = "<group>";
-		};
-		C78B5B7B21A011A400FC56A2 /* AllFriends */ = {
-			isa = PBXGroup;
-			children = (
-				C78B5B7E21A0121B00FC56A2 /* AllFriendsCell.swift */,
-			);
-			path = AllFriends;
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		C78FB320220606750020B6C4 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				199484BD21944382008DF759 /* LoginFormController.swift */,
-				C75A096B21A02A1000CEDDF2 /* MyFriendsController.swift */,
 				C78B5B7C21A011E900FC56A2 /* AllFriendsController.swift */,
+				C75A096B21A02A1000CEDDF2 /* MyFriendsController.swift */,
 				C75A097021A03FDB00CEDDF2 /* FriendsViewController.swift */,
 				C77A553D21A18A8300431027 /* FilterViewController.swift */,
+				C78FB321220701240020B6C4 /* SettingsController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -207,6 +186,7 @@
 				C77A554021A18AA400431027 /* FilterCell.swift in Sources */,
 				C75A097321A0401500CEDDF2 /* FriendsCell.swift in Sources */,
 				C75A096C21A02A1000CEDDF2 /* MyFriendsController.swift in Sources */,
+				C78FB322220701240020B6C4 /* SettingsController.swift in Sources */,
 				C77A553E21A18A8300431027 /* FilterViewController.swift in Sources */,
 				C78B5B7F21A0121B00FC56A2 /* AllFriendsCell.swift in Sources */,
 				C78B5B7D21A011E900FC56A2 /* AllFriendsController.swift in Sources */,

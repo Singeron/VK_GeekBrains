@@ -1,24 +1,21 @@
 
-
 import UIKit
 
 class MyFriendsController: UITableViewController {
     
     var friends = [String]()
+    var friendImage: UIImage
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
 
     // определяем количество столбцов
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
     // определяем количество столбцов
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return friends.count
     }
     
@@ -28,7 +25,8 @@ class MyFriendsController: UITableViewController {
         // получаем данные друга для конкретной строки
         let friend = friends[indexPath.row]
         // устанавливаем данные друга в значение ячейки
-        cell.friend.text = friend
+        cell.friendName.text = friend
+        cell.friendImage.image = friendImage
         
         return cell
     }
