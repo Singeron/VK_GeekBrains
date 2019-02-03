@@ -36,8 +36,10 @@ class LoginFormController: UIViewController, UITextFieldDelegate {
         }
         if self.demoLogin == loginText && self.demoPassword == passwordText {
             print("Success")
+            self.performSegue(withIdentifier: "openApp", sender: nil)
         } else {
             print("loginText or passwordText are invalid")
+            self.showErrorAlert()
         }
     }
     
@@ -47,7 +49,7 @@ class LoginFormController: UIViewController, UITextFieldDelegate {
         let source = segue?.source // MyFriends
     }
     
-    @IBAction func closeKeyboardAction() {
+    @IBAction func closeKeyboardAction() {   // убираем клавиатуру по тапу
         print("closeKeyboardAction")
         self.view.endEditing(true)
     }
@@ -84,7 +86,7 @@ class LoginFormController: UIViewController, UITextFieldDelegate {
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
-    //MARK: - UITextFieldWill    ----- Не работает -----
+    //MARK: - UITextField    ----- Не работает -----
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
@@ -164,26 +166,30 @@ class LoginFormController: UIViewController, UITextFieldDelegate {
     //MARK: - Alerts
     
     //Создаем функцию вывода алерта в случае ошибки
-    func showLoginError() {
-        // Создаем контроллер
-        let alert = UIAlertController(
-            title: "Ошибка",
-            message: "Введены не верные данные пользователя",
-            preferredStyle: .alert
-            )
-        // Создаем кнопку для UIAlertController
-        let action = UIAlertAction(
-            title: "Ok",
-            style: .cancel,
-            handler: nil
-            )
-        // Добавляем кнопку для UIAlertController
-        alert.addAction(action)
-        // Показываем UIAlertController
-        present(
-            alert,
+    func showErrorAlert() {
+        
+        let alertController = UIAlertController(  // Создаем контроллер
+            title: "Error",
+            message: "Login or Password are invalid",
+            preferredStyle: .alert)
+     
+//        let alertOkAction = UIAlertAction(        // Создаем кнопку "OK" для UIAlertController
+//            title: "Ok",
+//            style: .cancel) {(alert: UIAlertAction)
+//        in print("alertOkAction")}
+//        
+//        alertController.addAction(alertOkAction)  // Добавляем кнопку для UIAlertController
+        
+        let alertCancelAction = UIAlertAction(    // Создаем кнопку "Cancel" для UIAlertController
+            title: "Cancel",
+            style: .cancel) {(alert: UIAlertAction)
+        in print("alertCancelAction")}
+        
+        alertController.addAction(alertCancelAction) // Добавляем кнопку для UIAlertController
+
+        self.present(                                     // Показываем UIAlertController
+            alertController,
             animated: true,
-            completion: nil
-            )
-        }
+            completion: nil)
+    }
 }
