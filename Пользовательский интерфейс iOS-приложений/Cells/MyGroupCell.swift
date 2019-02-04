@@ -1,12 +1,13 @@
 
 import UIKit
 
-class MyFriendsCell: UITableViewCell {
-    
+class MyGroupCell: UITableViewCell {
+
     // MARK: - Outlets
     
-    @IBOutlet weak var friendImage: UIImageView! // вывели картинку в ячейку
-    @IBOutlet weak var friendName: UILabel! // вывели имя в ячейку
+    @IBOutlet weak var group: UILabel!
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var icon: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
