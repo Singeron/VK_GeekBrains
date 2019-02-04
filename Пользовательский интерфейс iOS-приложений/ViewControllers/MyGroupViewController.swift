@@ -1,7 +1,7 @@
 
 import UIKit
 
-class FilterViewController: UITableViewController, UISearchBarDelegate {
+class MyGroupViewController: UITableViewController, UISearchBarDelegate {
     
     var friends = [String]()
     
@@ -77,7 +77,7 @@ class FilterViewController: UITableViewController, UISearchBarDelegate {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // получаем пул ячеек
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Filter", for: indexPath) as! FilterCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MyGroup", for: indexPath) as! MyGroupCell
         // получаем данные друга для конкретной строки
         let friend = friends[indexPath.row]
         // устанавливаем данные друга в значение ячейки

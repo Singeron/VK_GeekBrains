@@ -1,18 +1,19 @@
 
 import UIKit
 
-class MyFriendsCell: UITableViewCell {
-    
+class AllGroupCell: UITableViewCell {
+
     // MARK: - Outlets
-    
-    @IBOutlet weak var friendImage: UIImageView! // вывели картинку в ячейку
-    @IBOutlet weak var friendName: UILabel! // вывели имя в ячейку
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+
+        // Configure the view for the selected state
     }
+
 }
