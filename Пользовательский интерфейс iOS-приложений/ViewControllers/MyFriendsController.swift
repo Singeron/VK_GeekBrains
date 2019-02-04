@@ -4,7 +4,6 @@ import UIKit
 class MyFriendsController: UITableViewController {
     
     var friends = [String]()
-    var friendImage: UIImage
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +25,6 @@ class MyFriendsController: UITableViewController {
         let friend = friends[indexPath.row]
         // устанавливаем данные друга в значение ячейки
         cell.friendName.text = friend
-        cell.friendImage.image = friendImage
         
         return cell
     }
