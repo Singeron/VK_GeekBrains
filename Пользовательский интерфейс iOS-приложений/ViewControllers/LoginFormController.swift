@@ -43,11 +43,11 @@ class LoginFormController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    @IBAction func logOutButtonAction(segue: UIStoryboardSegue?) { // кнопка выхода из приложения
-        
-        let destinationVC = segue?.destination // Login
-        let source = segue?.source // MyFriends
-    }
+//    @IBAction func logOutButtonAction(segue: UIStoryboardSegue?) { // кнопка выхода из приложения
+//        
+//        let destinationVC = segue?.destination // Login
+//        let source = segue?.source // MyFriends
+//    }
     
     @IBAction func closeKeyboardAction() {   // убираем клавиатуру по тапу
         print("closeKeyboardAction")

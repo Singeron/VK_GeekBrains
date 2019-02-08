@@ -315,7 +315,7 @@
                             </scopeButtonTitles>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyGroup" id="aKr-PM-bBn" customClass="MyGroupCell" customModule="Пользовательскии__интерфеи_с_iOS_приложении_" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Filter" id="aKr-PM-bBn" customClass="MyGroupCell" customModule="Пользовательскии__интерфеи_с_iOS_приложении_" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="84" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aKr-PM-bBn" id="Y92-Vr-Fi8" customClass="MyGroupCell" customModule="Пользовательскии__интерфеи_с_iOS_приложении_" customModuleProvider="target">
@@ -454,9 +454,9 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
+                        <segue destination="cfq-Rd-bp7" kind="relationship" relationship="viewControllers" id="L69-cT-dqs"/>
                         <segue destination="t29-Hs-3ED" kind="relationship" relationship="viewControllers" id="FFB-Im-IJl"/>
                         <segue destination="rJI-Jo-i8M" kind="relationship" relationship="viewControllers" id="Xwt-Pb-s51"/>
-                        <segue destination="cfq-Rd-bp7" kind="relationship" relationship="viewControllers" id="L69-cT-dqs"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3lr-Zk-alz" userLabel="First Responder" sceneMemberID="firstResponder"/>
