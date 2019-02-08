@@ -13,9 +13,7 @@ class FriendsViewController: UICollectionViewController {
         return 10
     }
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        // получаем пул ячеек
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AboutFriendCell", for: indexPath) as! FriendsCell
-        // устанавливаем друга в значение ячейки
         cell.name.text = "Иван"
         cell.group.text = "Работа"
         return cell

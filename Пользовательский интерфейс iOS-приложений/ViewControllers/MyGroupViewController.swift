@@ -4,8 +4,7 @@ import UIKit
 class MyGroupViewController: UITableViewController, UISearchBarDelegate {
     
     var friends = [String]()
-    
-    // создаем массив групп
+ 
     var group = [
         "Работа",
         "Отпуск",
