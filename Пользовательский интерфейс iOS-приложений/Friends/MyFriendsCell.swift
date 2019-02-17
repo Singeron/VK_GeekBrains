@@ -1,12 +1,17 @@
 
 import UIKit
 
-class MyFriendsCell: UITableViewCell {
+@IBDesignable class MyFriendsCell: UITableViewCell {
     
-    // MARK: - Outlets
+    //  @IBOutlet var allFoto: [MyFriendsCell]!
+    //  private var shadowLayer: CAShapeLayer!
     
-    @IBOutlet weak var friendImage: UIImageView! // вывели картинку в ячейку
-    @IBOutlet weak var friendName: UILabel! // вывели имя в ячейку
+    @IBOutlet weak var friendName: UILabel!
+    @IBOutlet weak var fotoFriend: UIImageView!
+    
+    override class var layerClass: AnyClass {
+        return CAShapeLayer.self
+    }
     
     @IBOutlet weak var shadowView: UIView! {
         didSet {
@@ -31,15 +36,31 @@ class MyFriendsCell: UITableViewCell {
     
     /// Прозрачность тени
     @IBInspectable var shadowOpacity: Float = 0.3
+    //        {
+    //        didSet {
+    //            setNeedsDisplay()
+    //        }
+    //    }
     
     /// Радиус блура тени
     @IBInspectable var shadowRadius: CGFloat = 10
-   
+    //        {
+    //        didSet {
+    //            setNeedsDisplay()
+    //        }
+    //    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
+        // Initialization code
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+        
+        // Configure the view for the selected state
+        
+        
     }
+    
 }
