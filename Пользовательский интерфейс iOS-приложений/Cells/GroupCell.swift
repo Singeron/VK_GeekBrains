@@ -1,14 +1,7 @@
-//
-//  MyNewsCell.swift
-//  Пользовательский интерфейс iOS-приложений
-//
-//  Created by Дмитрий Юрасов on 17/02/2019.
-//  Copyright © 2019 Дмитрий Юрасов. All rights reserved.
-//
 
 import UIKit
 
-class MyNewsCell: UITableViewCell {
+class GroupCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()

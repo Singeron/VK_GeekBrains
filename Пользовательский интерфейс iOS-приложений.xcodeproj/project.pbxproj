@@ -12,25 +12,19 @@
 		199484B1219442C8008DF759 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 199484AF219442C8008DF759 /* Main.storyboard */; };
 		199484B3219442C9008DF759 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 199484B2219442C9008DF759 /* Assets.xcassets */; };
 		199484B6219442C9008DF759 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 199484B4219442C9008DF759 /* LaunchScreen.storyboard */; };
+		199484BE21944382008DF759 /* LoginFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199484BD21944382008DF759 /* LoginFormController.swift */; };
 		C75A096C21A02A1000CEDDF2 /* MyFriendsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75A096B21A02A1000CEDDF2 /* MyFriendsController.swift */; };
 		C75A096E21A02A3000CEDDF2 /* MyFriendsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75A096D21A02A3000CEDDF2 /* MyFriendsCell.swift */; };
-		C77A553E21A18A8300431027 /* MyGroupsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77A553D21A18A8300431027 /* MyGroupsController.swift */; };
+		C75A097121A03FDB00CEDDF2 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75A097021A03FDB00CEDDF2 /* FriendsViewController.swift */; };
+		C75A097321A0401500CEDDF2 /* FriendsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75A097221A0401500CEDDF2 /* FriendsCell.swift */; };
+		C77A553E21A18A8300431027 /* MyGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77A553D21A18A8300431027 /* MyGroupViewController.swift */; };
 		C77A554021A18AA400431027 /* MyGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77A553F21A18AA400431027 /* MyGroupCell.swift */; };
-		C78FB3242208C68C0020B6C4 /* AllGroupsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78FB3232208C68C0020B6C4 /* AllGroupsController.swift */; };
+		C78B5B7D21A011E900FC56A2 /* AllFriendsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78B5B7C21A011E900FC56A2 /* AllFriendsController.swift */; };
+		C78B5B7F21A0121B00FC56A2 /* AllFriendsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78B5B7E21A0121B00FC56A2 /* AllFriendsCell.swift */; };
+		C78FB322220701240020B6C4 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78FB321220701240020B6C4 /* SettingsController.swift */; };
+		C78FB3242208C68C0020B6C4 /* AllGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78FB3232208C68C0020B6C4 /* AllGroupViewController.swift */; };
 		C78FB3282208C8130020B6C4 /* AllGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78FB3272208C8130020B6C4 /* AllGroupCell.swift */; };
-		C78FB32C220D84490020B6C4 /* FotoFriendCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78FB32B220D84490020B6C4 /* FotoFriendCollectionController.swift */; };
-		C78FB32E220D85750020B6C4 /* FotoCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78FB32D220D85750020B6C4 /* FotoCollectionCell.swift */; };
-		C78FB331221980EF0020B6C4 /* LoadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78FB330221980EF0020B6C4 /* LoadView.swift */; };
-		C78FB333221981700020B6C4 /* LoadNewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78FB332221981700020B6C4 /* LoadNewView.swift */; };
-		C78FB335221981D90020B6C4 /* CustomPushAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78FB334221981D90020B6C4 /* CustomPushAnimator.swift */; };
-		C78FB337221982490020B6C4 /* CustomPopAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78FB336221982490020B6C4 /* CustomPopAnimator.swift */; };
-		C78FB339221982A30020B6C4 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78FB338221982A30020B6C4 /* CustomNavigationController.swift */; };
-		C78FB33B2219832F0020B6C4 /* CustomInteractiveTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78FB33A2219832F0020B6C4 /* CustomInteractiveTransition.swift */; };
-		C78FB33E221984D10020B6C4 /* LikeControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78FB33D221984D10020B6C4 /* LikeControl.swift */; };
-		C78FB340221985140020B6C4 /* MyNewsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78FB33F221985140020B6C4 /* MyNewsController.swift */; };
-		C78FB342221985790020B6C4 /* MyNewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78FB341221985790020B6C4 /* MyNewsCell.swift */; };
-		C78FB344221985AC0020B6C4 /* MyNewsLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78FB343221985AC0020B6C4 /* MyNewsLayout.swift */; };
-		C78FB346221986040020B6C4 /* MyNewsCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78FB345221986040020B6C4 /* MyNewsCollectionCell.swift */; };
+		C78FB32A2208CBD10020B6C4 /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78FB3292208CBD10020B6C4 /* GroupCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,25 +35,19 @@
 		199484B2219442C9008DF759 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		199484B5219442C9008DF759 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		199484B7219442C9008DF759 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		199484BD21944382008DF759 /* LoginFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFormController.swift; sourceTree = "<group>"; };
 		C75A096B21A02A1000CEDDF2 /* MyFriendsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFriendsController.swift; sourceTree = "<group>"; };
 		C75A096D21A02A3000CEDDF2 /* MyFriendsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFriendsCell.swift; sourceTree = "<group>"; };
-		C77A553D21A18A8300431027 /* MyGroupsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGroupsController.swift; sourceTree = "<group>"; };
+		C75A097021A03FDB00CEDDF2 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		C75A097221A0401500CEDDF2 /* FriendsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsCell.swift; sourceTree = "<group>"; };
+		C77A553D21A18A8300431027 /* MyGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGroupViewController.swift; sourceTree = "<group>"; };
 		C77A553F21A18AA400431027 /* MyGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGroupCell.swift; sourceTree = "<group>"; };
-		C78FB3232208C68C0020B6C4 /* AllGroupsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGroupsController.swift; sourceTree = "<group>"; };
+		C78B5B7C21A011E900FC56A2 /* AllFriendsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFriendsController.swift; sourceTree = "<group>"; };
+		C78B5B7E21A0121B00FC56A2 /* AllFriendsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFriendsCell.swift; sourceTree = "<group>"; };
+		C78FB321220701240020B6C4 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		C78FB3232208C68C0020B6C4 /* AllGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGroupViewController.swift; sourceTree = "<group>"; };
 		C78FB3272208C8130020B6C4 /* AllGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGroupCell.swift; sourceTree = "<group>"; };
-		C78FB32B220D84490020B6C4 /* FotoFriendCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotoFriendCollectionController.swift; sourceTree = "<group>"; };
-		C78FB32D220D85750020B6C4 /* FotoCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotoCollectionCell.swift; sourceTree = "<group>"; };
-		C78FB330221980EF0020B6C4 /* LoadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadView.swift; sourceTree = "<group>"; };
-		C78FB332221981700020B6C4 /* LoadNewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadNewView.swift; sourceTree = "<group>"; };
-		C78FB334221981D90020B6C4 /* CustomPushAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPushAnimator.swift; sourceTree = "<group>"; };
-		C78FB336221982490020B6C4 /* CustomPopAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPopAnimator.swift; sourceTree = "<group>"; };
-		C78FB338221982A30020B6C4 /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
-		C78FB33A2219832F0020B6C4 /* CustomInteractiveTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInteractiveTransition.swift; sourceTree = "<group>"; };
-		C78FB33D221984D10020B6C4 /* LikeControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeControl.swift; sourceTree = "<group>"; };
-		C78FB33F221985140020B6C4 /* MyNewsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNewsController.swift; sourceTree = "<group>"; };
-		C78FB341221985790020B6C4 /* MyNewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNewsCell.swift; sourceTree = "<group>"; };
-		C78FB343221985AC0020B6C4 /* MyNewsLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNewsLayout.swift; sourceTree = "<group>"; };
-		C78FB345221986040020B6C4 /* MyNewsCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNewsCollectionCell.swift; sourceTree = "<group>"; };
+		C78FB3292208CBD10020B6C4 /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,65 +80,43 @@
 		199484AA219442C8008DF759 /* Пользовательский интерфейс iOS-приложений */ = {
 			isa = PBXGroup;
 			children = (
-				C78FB32F221980940020B6C4 /* Animation */,
-				C78FB33C221984AD0020B6C4 /* News */,
-				C78FB320220606750020B6C4 /* Friends */,
-				C77A553C21A18A0B00431027 /* Groups */,
+				C78FB320220606750020B6C4 /* ViewControllers */,
+				C77A553C21A18A0B00431027 /* Cells */,
+				199484AF219442C8008DF759 /* Main.storyboard */,
+				199484B2219442C9008DF759 /* Assets.xcassets */,
 				199484AB219442C8008DF759 /* AppDelegate.swift */,
 				199484AD219442C8008DF759 /* ViewController.swift */,
-				199484AF219442C8008DF759 /* Main.storyboard */,
 				199484B4219442C9008DF759 /* LaunchScreen.storyboard */,
-				199484B2219442C9008DF759 /* Assets.xcassets */,
 				199484B7219442C9008DF759 /* Info.plist */,
 			);
 			path = "Пользовательский интерфейс iOS-приложений";
 			sourceTree = "<group>";
 		};
-		C77A553C21A18A0B00431027 /* Groups */ = {
+		C77A553C21A18A0B00431027 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				C77A553D21A18A8300431027 /* MyGroupsController.swift */,
+				C78B5B7E21A0121B00FC56A2 /* AllFriendsCell.swift */,
+				C75A096D21A02A3000CEDDF2 /* MyFriendsCell.swift */,
+				C75A097221A0401500CEDDF2 /* FriendsCell.swift */,
 				C77A553F21A18AA400431027 /* MyGroupCell.swift */,
-				C78FB3232208C68C0020B6C4 /* AllGroupsController.swift */,
+				C78FB3292208CBD10020B6C4 /* GroupCell.swift */,
 				C78FB3272208C8130020B6C4 /* AllGroupCell.swift */,
 			);
-			path = Groups;
+			path = Cells;
 			sourceTree = "<group>";
 		};
-		C78FB320220606750020B6C4 /* Friends */ = {
+		C78FB320220606750020B6C4 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				199484BD21944382008DF759 /* LoginFormController.swift */,
+				C78B5B7C21A011E900FC56A2 /* AllFriendsController.swift */,
 				C75A096B21A02A1000CEDDF2 /* MyFriendsController.swift */,
-				C78FB32B220D84490020B6C4 /* FotoFriendCollectionController.swift */,
-				C75A096D21A02A3000CEDDF2 /* MyFriendsCell.swift */,
-				C78FB32D220D85750020B6C4 /* FotoCollectionCell.swift */,
+				C75A097021A03FDB00CEDDF2 /* FriendsViewController.swift */,
+				C77A553D21A18A8300431027 /* MyGroupViewController.swift */,
+				C78FB3232208C68C0020B6C4 /* AllGroupViewController.swift */,
+				C78FB321220701240020B6C4 /* SettingsController.swift */,
 			);
-			path = Friends;
-			sourceTree = "<group>";
-		};
-		C78FB32F221980940020B6C4 /* Animation */ = {
-			isa = PBXGroup;
-			children = (
-				C78FB330221980EF0020B6C4 /* LoadView.swift */,
-				C78FB332221981700020B6C4 /* LoadNewView.swift */,
-				C78FB334221981D90020B6C4 /* CustomPushAnimator.swift */,
-				C78FB336221982490020B6C4 /* CustomPopAnimator.swift */,
-				C78FB338221982A30020B6C4 /* CustomNavigationController.swift */,
-				C78FB33A2219832F0020B6C4 /* CustomInteractiveTransition.swift */,
-			);
-			path = Animation;
-			sourceTree = "<group>";
-		};
-		C78FB33C221984AD0020B6C4 /* News */ = {
-			isa = PBXGroup;
-			children = (
-				C78FB33D221984D10020B6C4 /* LikeControl.swift */,
-				C78FB33F221985140020B6C4 /* MyNewsController.swift */,
-				C78FB341221985790020B6C4 /* MyNewsCell.swift */,
-				C78FB343221985AC0020B6C4 /* MyNewsLayout.swift */,
-				C78FB345221986040020B6C4 /* MyNewsCollectionCell.swift */,
-			);
-			path = News;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,27 +190,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C78FB33B2219832F0020B6C4 /* CustomInteractiveTransition.swift in Sources */,
-				C78FB339221982A30020B6C4 /* CustomNavigationController.swift in Sources */,
-				C78FB333221981700020B6C4 /* LoadNewView.swift in Sources */,
+				C78FB32A2208CBD10020B6C4 /* GroupCell.swift in Sources */,
+				199484BE21944382008DF759 /* LoginFormController.swift in Sources */,
+				C75A097121A03FDB00CEDDF2 /* FriendsViewController.swift in Sources */,
 				C77A554021A18AA400431027 /* MyGroupCell.swift in Sources */,
-				C78FB346221986040020B6C4 /* MyNewsCollectionCell.swift in Sources */,
 				C78FB3282208C8130020B6C4 /* AllGroupCell.swift in Sources */,
+				C75A097321A0401500CEDDF2 /* FriendsCell.swift in Sources */,
 				C75A096C21A02A1000CEDDF2 /* MyFriendsController.swift in Sources */,
-				C78FB33E221984D10020B6C4 /* LikeControl.swift in Sources */,
-				C77A553E21A18A8300431027 /* MyGroupsController.swift in Sources */,
-				C78FB32E220D85750020B6C4 /* FotoCollectionCell.swift in Sources */,
-				C78FB335221981D90020B6C4 /* CustomPushAnimator.swift in Sources */,
-				C78FB331221980EF0020B6C4 /* LoadView.swift in Sources */,
-				C78FB337221982490020B6C4 /* CustomPopAnimator.swift in Sources */,
-				C78FB340221985140020B6C4 /* MyNewsController.swift in Sources */,
+				C78FB322220701240020B6C4 /* SettingsController.swift in Sources */,
+				C77A553E21A18A8300431027 /* MyGroupViewController.swift in Sources */,
+				C78B5B7F21A0121B00FC56A2 /* AllFriendsCell.swift in Sources */,
+				C78B5B7D21A011E900FC56A2 /* AllFriendsController.swift in Sources */,
 				C75A096E21A02A3000CEDDF2 /* MyFriendsCell.swift in Sources */,
-				C78FB344221985AC0020B6C4 /* MyNewsLayout.swift in Sources */,
-				C78FB3242208C68C0020B6C4 /* AllGroupsController.swift in Sources */,
+				C78FB3242208C68C0020B6C4 /* AllGroupViewController.swift in Sources */,
 				199484AE219442C8008DF759 /* ViewController.swift in Sources */,
 				199484AC219442C8008DF759 /* AppDelegate.swift in Sources */,
-				C78FB342221985790020B6C4 /* MyNewsCell.swift in Sources */,
-				C78FB32C220D84490020B6C4 /* FotoFriendCollectionController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,7 +353,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UJH34UPSB2;
 				INFOPLIST_FILE = "Пользовательский интерфейс iOS-приложений/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -412,7 +372,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UJH34UPSB2;
 				INFOPLIST_FILE = "Пользовательский интерфейс iOS-приложений/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
